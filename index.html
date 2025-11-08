@@ -204,7 +204,7 @@ async function addDailyNewQuizzes() {
   
   try {
     // Vercel Serverless Function 호출
-    const response = await fetch('/api/generate-quiz', {
+    const response = await fetch('/api/generate-quiz.js', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
